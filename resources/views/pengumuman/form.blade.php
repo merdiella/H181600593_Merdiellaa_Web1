@@ -15,13 +15,13 @@
                 
 
 <div class="form-group row ">
-    <label for="kategori_artikel_id" class="col-form-label text-md-right">{{__('Kategori Artikel') }}</label>
+    <label for="kategori_pengumuman_id" class="col-md-4 col-form-label text-md-right">{{__('Kategori Pengumuman') }}</label>
 
         <div class="col-md-6">
 
-        {!! Form::select('kategori_artikel_id', $kategoriArtikel,null["class"=>"form-control","required"] ) !!}
+        {!! Form::select('kategori_pengumuman_id', $kategoriPengumuman,null,["class"=>"form-control","required"] ) !!}
 
-            @error('kategori_artikel_id')
+            @error('kategori_pengumuman_id')
             <span class="invaled-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                         </span>

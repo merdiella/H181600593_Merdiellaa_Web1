@@ -18,7 +18,8 @@
 
                 <tr>
                       <td> ID </td>
-                      <td> Nama </td>
+                      <td> Judul </td>
+                      <td> Isi </td>
                       <td> Users Id </td>
                       <td> Create </td>
                       <td> Aksi </td>
@@ -29,6 +30,7 @@
                 <tr>
                     <td>{!!$item->id!!}</td>
                     <td>{!!$item->judul!!}</td>
+                    <td>{!!$item->isi!!}</td>
                     <td>{!!$item->users_id!!}</td>
                     <td>{!!$item->created_at!!}</td>
                     <td>

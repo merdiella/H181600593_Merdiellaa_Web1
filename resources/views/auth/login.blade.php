@@ -39,6 +39,20 @@
                             </div>
                         </div>
 
+                        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4">
+             <div class="captcha">
+               <span>{!! captcha_img('flat') !!}</span>
+               <button type="button" class="btn btn-success">Refresh<i class="fa fa-refresh" id="refresh"></i></button>
+               </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="form-group col-md-4">
+             <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha"></div>
+          </div>
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">

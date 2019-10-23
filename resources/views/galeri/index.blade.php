@@ -19,7 +19,9 @@
 
                 <tr>
                       <td> ID </td>
-                      <td> judul </td>
+                      <td> Nama </td>
+                      <td> Keterangan </td>
+                      <td> Path </td>
                       <td> Users Id </td>
                       <td> Create </td>
                       <td> Aksi </td>
@@ -29,7 +31,9 @@
 
                 <tr>
                     <td>{!!$item->id!!}</td>
-                    <td>{!!$item->judul!!}</td>
+                    <td>{!!$item->nama!!}</td>
+                    <td>{!!$item->keterangan!!}</td>
+                    <td>{!!$item->path!!}</td>
                     <td>{!!$item->users_id!!}</td>
                     <td>{!!$item->created_at!!}</td>
                     <td>

@@ -17,6 +17,7 @@
                       <td> Nama </td>
                       <td> Users Id </td>
                       <td> Create </td>
+                      <td> Update </td>
                       <td> Aksi </td>
                </tr>
 
@@ -27,8 +28,13 @@
                     <td>{!!$item->nama!!}</td>
                     <td>{!!$item->users_id!!}</td>
                     <td>{!!$item->created_at!!}</td>
+                    <td>{!!$item->updated_at!!}</td>
                     <td> 
                       <a href="{!! route('kategori_galeri.show', [$item->id]) !!}">Lihat</a>
+                      <a href="{!! route('kategori_galeri.edit', [$item->id]) !!}">Ubah</a>
+                      {!! Form::open( ['route'=> ['kategori_galeri.destroy', $item->id],'method'=>'delete']) !!}
+                      {!! Form::submit('Hapus',['class'=>'btn btn-sm btn-danger','onclick'=>"return confirm('apakah anda yakin ingin menghapus ini?')"]); !!}
+                      {!! Form::close() !!}
                     </td>
                 </tr>
               

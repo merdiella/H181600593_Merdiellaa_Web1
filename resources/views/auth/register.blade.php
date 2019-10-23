@@ -39,12 +39,12 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="kontak" class="col-md-4 col-form-label text-md-right">{{ __('kontak') }}</label>
+                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ __('contact') }}</label>
 
                             <div class="col-md-6">
-                                <input id="kontak" type="text" class="form-control @error('kontak') is-invalid @enderror" name="kontak" value="{{ old('kontak') }}" required autocomplete="kontak">
+                                <input id="contact" type="text" class="form-control @error('contact') is-invalid @enderror" name="contact" value="{{ old('contact') }}" required autocomplete="contact">
 
-                                @error('kontak')
+                                @error('contact')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
